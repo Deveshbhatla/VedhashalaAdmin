@@ -177,5 +177,15 @@ public class Delete extends AppCompatActivity {
                 });
             }
         });
+
+        delete.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Intent i = new Intent(getApplicationContext(),TokenActivity.class);
+                startActivity(i);
+
+                return false;
+            }
+        });
     }
 }
